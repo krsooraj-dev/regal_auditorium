@@ -1,0 +1,20 @@
+# Render Blueprint Configuration File
+# This tells Render to automatically spin up a database and link it to the web service.
+
+databases:
+  - name: regal-db
+    databaseName: regal_db
+    user: regal_admin
+    plan: free
+
+services:
+  - type: web
+    name: regal-auditorium
+    env: docker
+    plan: free
+    numInstances: 1
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: regal-db
+          property: connectionString
