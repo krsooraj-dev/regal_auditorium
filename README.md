@@ -32,3 +32,31 @@ This project was engineered leveraging state-of-the-art AI sandboxes to accelera
 ---
 
 ## 📐 Systems Architecture View
+[User Interface (Render)]
+│
+▼ (Asynchronous Form Payload Submission)
+[Database Storage Engine (Neon Serverless Postgres Cluster)]
+---
+
+## 🗺️ Upcoming Production Asset Updates
+The application structure is fully deployed and integrated. Current text arrays utilize standard development placeholder variables (such as generalized town map coordinates and dummy contact metrics) which will be seamlessly updated via the cloud configuration panel as soon as final business assets are finalized by the venue client.
+
+---
+
+## 🔧 Local Development Setup
+
+To run this platform locally on your machine:
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/krsooraj-dev/Regal_Auditorium_v2.git](https://github.com/krsooraj-dev/Regal_Auditorium_v2.git)
+   cd Regal_Auditorium_v2
+   
+   Run a local server environment:
+If you have Python installed, you can spin up a quick server to test the directory scripts:
+
+Bash
+python3 -m http.server 8000
+Open your browser and navigate to http://localhost:8000.
+
+
