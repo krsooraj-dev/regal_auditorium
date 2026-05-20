@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Administration Dashboard | Regal Auditorium</title>
+    <!-- CSS Style Sheet -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="logo">
+            <img src="../images/auditorium_symbol.png" alt="Regal Auditorium Symbol" class="logo-symbol">
+            <div>
+                <h1>Regal Admin</h1>
+                <span>Booking Management Control</span>
+            </div>
+        </div>
+        
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="../index.html">View Site</a></li>
+                <li><a href="venue.html">The Venue</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="admin.html" class="cta-link active">Admin Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="admin-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Auditorium Management Console</h2>
+                    <p>Review customer booking inquiries, approve schedules, and manually block out dates for maintenance.</p>
+                </div>
+
+                <!-- Statistics Widgets -->
+                <div class="admin-stats-row">
+                    <div class="stat-card">
+                        <h4>Total Inquiries</h4>
+                        <div class="stat-number" id="stat-total-inquiries">0</div>
+                    </div>
+                    <div class="stat-card approved">
+                        <h4>Confirmed Bookings</h4>
+                        <div class="stat-number" id="stat-approved-bookings">0</div>
+                    </div>
+                    <div class="stat-card pending">
+                        <h4>Pending Requests</h4>
+                        <div class="stat-number" id="stat-pending-requests">0</div>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Capacity Alert</h4>
+                        <div class="stat-number" style="font-size:1.6em; color:var(--color-primary-dark); margin-top:8px;">700 Guests</div>
+                    </div>
+                </div>
+
+                <!-- Manual Date Override / Blocker -->
+                <div class="admin-panel" style="margin-top: 40px; margin-bottom: 40px;">
+                    <div class="admin-panel-header">
+                        <h3>Manual Date Block/Release</h3>
+                    </div>
+                    <form id="block-date-form" class="block-date-form">
+                        <div class="form-group" style="flex: 1;">
+                            <label for="block-date">Select Date *</label>
+                            <input type="date" id="block-date" required>
+                        </div>
+                        <div class="form-group" style="flex: 1;">
+                            <label for="block-status">Status Setting</label>
+                            <select id="block-status">
+                                <option value="booked">Booked (Fully Lock Date)</option>
+                                <option value="pending">Pending (Hold Date)</option>
+                                <option value="available">Available (Release Date)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="button primary-cta" style="height: 48px; min-width: 180px;">Apply Setting</button>
+                    </form>
+                </div>
+
+                <!-- Inquiries Log -->
+                <div class="admin-panel">
+                    <div class="admin-panel-header">
+                        <h3>Booking Inquiry Log</h3>
+                    </div>
+                    <div class="admin-table-container">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Client / Submitted</th>
+                                    <th>Contact Details</th>
+                                    <th>Event Date</th>
+                                    <th>Event Type</th>
+                                    <th>Guests</th>
+                                    <th>A/C Package</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="admin-inquiries-body">
+                                <tr>
+                                    <td colspan="8" style="text-align: center; color: var(--color-text-muted);">Loading inquiries...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- Custom Notification Banner -->
+    <div id="notify-banner" class="notify-banner" role="status" aria-live="polite">
+        Action executed successfully.
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer" style="margin-top: 60px;">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Regal Auditorium Alleppey. All Rights Reserved. Booking Dashboard Engine v1.0.0.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

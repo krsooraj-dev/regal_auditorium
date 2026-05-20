@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Venue & Facilities | Regal Auditorium Alleppey</title>
+    <meta name="description" content="Explore specifications, A/C configurations, and amenities of Regal Auditorium Alleppey. View seating layouts, parking availability, and check date openings in real time.">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="logo">
+            <img src="../images/auditorium_symbol.png" alt="Regal Auditorium Symbol" class="logo-symbol">
+            <div>
+                <h1>Regal Auditorium</h1>
+                <span>Thumpoly, Alleppey</span>
+            </div>
+        </div>
+        
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="venue.html" class="active">The Venue</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="cta-link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <h1>Our Premium Venue & Facilities</h1>
+            <p>A perfect combination of grand capacity, luxury amenities, and flexible climate packages.</p>
+        </section>
+
+        <!-- Technical Specifications Table -->
+        <section class="technical-specs">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Venue Capacity & Details</h2>
+                    <p>Designed to host large gatherings with complete safety, comfort, and logistical support.</p>
+                </div>
+                <div class="specs-container">
+                    <table class="specs-table">
+                        <thead>
+                            <tr>
+                                <th>Category Spec</th>
+                                <th>Auditorium Detail</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Guest Seating Capacity</strong></td>
+                                <td>700+ Guests (Combined Main Seating Hall and Dining layout)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dedicated Car Parking</strong></td>
+                                <td>Ample space for 50+ cars and heavy passenger buses inside closed gates</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Power Logistics</strong></td>
+                                <td>Full Power Backup with high-capacity silent Generator system</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Location Landmark</strong></td>
+                                <td>Thumpoly Jct, Near Ayyappa Temple, Alappuzha, Kerala</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Availability Calendar Section -->
+        <section class="availability-section" id="availability-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Dynamic Booking Calendar</h2>
+                    <p>Check slot openings in real-time. Pick an available day to pre-select it, then complete your booking inquiry.</p>
+                </div>
+                
+                <div class="calendar-wrapper">
+                    <div class="calendar-header-controls">
+                        <button class="cal-nav-btn" id="prev-month-btn" aria-label="Previous month">&lt;</button>
+                        <h3 id="current-month-year">Loading...</h3>
+                        <button class="cal-nav-btn" id="next-month-btn" aria-label="Next month">&gt;</button>
+                    </div>
+                    
+                    <div class="calendar-grid" id="calendar-display">
+                        <!-- Rendered dynamically by js/script.js -->
+                    </div>
+                    
+                    <div class="calendar-legend">
+                        <div class="legend-item">
+                            <div class="legend-color available"></div>
+                            <span>Available (Click to Select)</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color pending"></div>
+                            <span>Pending Review</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color booked"></div>
+                            <span>Fully Booked</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="contact.html" class="button primary-cta">Proceed Directly to Booking Form</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- A/C Flexibility Section -->
+        <section class="ac-flexibility">
+            <div class="container">
+                <h2>Flexible Comfort Packages</h2>
+                <p>We configure the venue layout and cooling structures to align perfectly with your budget and weather preferences.</p>
+                <div class="ac-grid">
+                    <div class="ac-card">
+                        <h3>❄️ Fully Air-Conditioned</h3>
+                        <p>Complete multi-zone A/C control across the main reception hall. Strongly recommended for peak summer marriages, corporate events, and VIP celebrations.</p>
+                    </div>
+                    <div class="ac-card">
+                        <h3>🍃 Eco Non-AC Configuration</h3>
+                        <p>Naturally ventilated configuration utilizing powerful ceiling air-flow systems. An economical package ideal for local gatherings, club meetings, and cooler winter events.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Amenities Section -->
+        <section class="amenities-list">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Key Amenities Included</h2>
+                    <p>All venue packages come with our comprehensive infrastructure support.</p>
+                </div>
+                <div class="amenities-grid">
+                    <div class="amenity-card">
+                        <div class="amenity-icon-wrapper">🔊</div>
+                        <h3>Professional Audio-Visual</h3>
+                        <ul>
+                            <li>Premium acoustic hall design</li>
+                            <li>Professional stage lighting fixtures</li>
+                            <li>Wired and wireless microphones</li>
+                        </ul>
+                    </div>
+                    <div class="amenity-card">
+                        <div class="amenity-icon-wrapper">🍲</div>
+                        <h3>Catering & Green Rooms</h3>
+                        <ul>
+                            <li>Spacious, modern kitchen area</li>
+                            <li>Separate waste management layout</li>
+                            <li>2 Premium private green rooms</li>
+                        </ul>
+                    </div>
+                    <div class="amenity-card">
+                        <div class="amenity-icon-wrapper">♿</div>
+                        <h3>Comfort & Access</h3>
+                        <ul>
+                            <li>Wheelchair ramps and entry ways</li>
+                            <li>Hygienic, dedicated washrooms</li>
+                            <li>Premium granite reception lobby</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Regal Auditorium</h3>
+                <p>Transitioning traditional hospitality into premium digital-led convenience. The absolute venue choice in Alleppey.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="venue.html">The Venue</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Details</h4>
+                <p><strong>Location:</strong> Thumpoly, Near Ayyappa Temple, Alappuzha, Kerala - 688007</p>
+                <p><strong>Phone:</strong> +91 477 223 9988 | +91 98470 54321</p>
+                <p><strong>Email:</strong> bookings@regalauditoriumalleppey.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Regal Auditorium Alleppey. All Rights Reserved. Designed with Premium AI-Assisted UX Standards.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

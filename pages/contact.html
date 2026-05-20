@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us & Booking Inquiry | Regal Auditorium Alleppey</title>
+    <meta name="description" content="Get in touch with Regal Auditorium Alleppey. Submit a booking inquiry, pre-select your preferred event date, get driving directions, and consult our venue manager.">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="logo">
+            <img src="../images/auditorium_symbol.png" alt="Regal Auditorium Symbol" class="logo-symbol">
+            <div>
+                <h1>Regal Auditorium</h1>
+                <span>Thumpoly, Alleppey</span>
+            </div>
+        </div>
+        
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="venue.html">The Venue</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="cta-link active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <h1>Contact Us & Make an Inquiry</h1>
+            <p>Ready to book or have questions? Get in touch with our booking manager or submit an inquiry below.</p>
+        </section>
+
+        <!-- Booking & Contact Grid -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    
+                    <!-- Contact Details Side -->
+                    <div class="contact-details">
+                        <h2>Get in Touch</h2>
+                        
+                        <div class="contact-item">
+                            <h3>📞 Booking Manager</h3>
+                            <p><a href="tel:+919847054321">+91 98470 54321</a></p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>📞 Alternate Office Contact</h3>
+                            <p><a href="tel:+914772239988">+91 477 223 9988</a></p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>✉️ Email Support</h3>
+                            <p><a href="mailto:bookings@regalauditoriumalleppey.com">bookings@regalauditoriumalleppey.com</a></p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>🏛️ Venue Address</h3>
+                            <p>Regal Auditorium,<br>Thumpoly Junction, Near Ayyappa Temple,<br>Alappuzha (Alleppey), Kerala - 688007</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>🌐 Follow Our Celebrations</h3>
+                            <div class="social-links">
+                                <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+                                <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+                                <a href="#" class="social-icon" aria-label="YouTube">YT</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Booking Inquiry Form Side -->
+                    <div class="booking-form-wrapper" id="booking-form-section">
+                        <h3>Event Booking Inquiry</h3>
+                        <form class="booking-form">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="name">Your Full Name *</label>
+                                    <input type="text" id="name" required placeholder="Arjun Nair">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" required placeholder="+91 98765 43210">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" required placeholder="name@domain.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="event-date">Preferred Event Date *</label>
+                                    <!-- Date will auto fill if redirected from calendar -->
+                                    <input type="date" id="event-date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="event-type">Event Category</label>
+                                    <select id="event-type">
+                                        <option value="wedding">Wedding / Marriage</option>
+                                        <option value="reception">Reception Ceremony</option>
+                                        <option value="corporate">Corporate Conference / Meeting</option>
+                                        <option value="party">Birthday / Private Celebration</option>
+                                        <option value="other">Other Events</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="guest-count">Est. Guest Count</label>
+                                    <input type="number" id="guest-count" min="10" max="1000" value="300">
+                                </div>
+                                <div class="form-group full-width">
+                                    <label for="ac-option">AC Preference Package</label>
+                                    <select id="ac-option">
+                                        <option value="ac">Premium Air-Conditioned Package</option>
+                                        <option value="non-ac">Eco Non-AC Package</option>
+                                    </select>
+                                </div>
+                                <div class="form-group full-width">
+                                    <label for="notes">Additional Requests or Notes</label>
+                                    <textarea id="notes" placeholder="Write here if you have requests for stage setup, catering kitchen access times, or green room details..."></textarea>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="button primary-cta form-submit-btn">Send Booking Inquiry</button>
+                            <p class="disclaimer">* Sending an inquiry blocks your date as 'Pending' in our system temporarily. Final slot confirmation requires manager approval and deposit payment.</p>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Driving Directions & Location Map -->
+                <div class="location-map" style="margin-top: 60px;">
+                    <h2>Find Us & Get Directions</h2>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.9866973041924!2d76.31557021422778!3d9.59600988079043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b08848777174e2d%3A0xc4eb1f07f9c2c62c!2sThumpoly%2C%20Alappuzha%2C%20Kerala!5e0!3m2!1sen!2sin!4v1678886400000" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    <a href="https://maps.google.com/?q=Thumpoly+Alappuzha+Kerala" target="_blank" class="button secondary-cta" style="align-self: center;">Open in Google Maps App</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Regal Auditorium</h3>
+                <p>Transitioning traditional hospitality into premium digital-led convenience. The absolute venue choice in Alleppey.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="venue.html">The Venue</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Details</h4>
+                <p><strong>Location:</strong> Thumpoly, Near Ayyappa Temple, Alappuzha, Kerala - 688007</p>
+                <p><strong>Phone:</strong> +91 477 223 9988 | +91 98470 54321</p>
+                <p><strong>Email:</strong> bookings@regalauditoriumalleppey.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Regal Auditorium Alleppey. All Rights Reserved. Designed with Premium AI-Assisted UX Standards.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

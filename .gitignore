@@ -1,0 +1,26 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local SQLite Database
+backend/bookings.db
+
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Application Logs
+*.log
+.gemini/
